@@ -140,6 +140,7 @@ wait
 
 
 rm /mnt/install.sh 
+# Configuration part of the environnement 
 
 printf "echo \"KEYMAP=fr\" > /etc/vconsole.conf \n
 	export LANG=fr_FR.UTF-8
