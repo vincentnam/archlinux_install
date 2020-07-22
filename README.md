@@ -39,22 +39,20 @@ You have to prepare partition before. My setup was :
     
 lsblk -f return : 
   
-  NAME   |     FSTYPE | FSVER |  LABEL |        UUID |                                 FSAVAIL | FSUSE% | MOUNTPOINT
-  ------------ | ------------- |  ------------- |  ------------- |  ------------- |  ------------- | 
-  sda          | | | | | |                                                                             
-  ├─sda1      | ntfs |         DATA|          4844B0F144B0E33C|||                                    
-  └─sda2      |btrfs |                    ef9b28af-c684-45af-8003-04d6d278ff98  |160.3G|    63%| /data|
-  nvme0n1||||||                                                                                   
-  ├─nvme0n1p1 |ntfs  |       |Récupération| 068CD53A8CD52549|                              |     | |
-  ├─nvme0n1p2 |vfat  | FAT32 |         |    84D7-0371        |                             |     | |
-  ├─nvme0n1p3 |      |       |         |                      |                            |     | |
-  ├─nvme0n1p4 |ntfs  |                 |   423AF6983AF687E5   |                            |    | |
-  ├─nvme0n1p5 |vfat  | FAT32 |ArchBoot |    F5EA-0CA3         |                    510.7M |    0%| /boot/efi|
-  ├─nvme0n1p6 |swap  | 1     |         |    db8b7f1c-c0b5-4ad1-ba33-15d5cc24e1f8  |       |      | [SWAP]|
-  ├─nvme0n1p7 |btrfs|        |ArchRoot |    49824e86-add9-49af-b93a-1bc35c300382  |145.9G |   19%| /btrfs|
-  └─nvme0n1p8 |xfs |         |ArchHome|     64e3d34f-1812-48b7-af1b-5f7b8ebe2dd2  | 26.4G|    32%| /home|
-
-
+  |NAME|FSTYPE|FSVER|LABEL|UUID|FSAVAIL|FSUS%|MOUNTPOINT|    
+  |------------|------------|------------|------------|------------|------------|------------|------------    
+  |  sda          | | | | | | ||                                                                 
+  ├─sda1      | ntfs | |         DATA|          4844B0F144B0E33C|||                                    
+     └─sda2      |btrfs |  | |                  ef9b28af-c684-45af-8003-04d6d278ff98  |160.3G|    63%| /data|
+    nvme0n1||||||                                                                                   
+    ├─nvme0n1p1 |ntfs  |       |Récupération| 068CD53A8CD52549|                              |     | |
+    ├─nvme0n1p2 |vfat  | FAT32 |         |    84D7-0371        |                             |     | |
+    ├─nvme0n1p3 |      |       |         |                      |                            |     | |
+    ├─nvme0n1p4 |ntfs  |       |         |   423AF6983AF687E5   |                            |    | |
+    ├─nvme0n1p5 |vfat  | FAT32 |ArchBoot |    F5EA-0CA3         |                    510.7M |    0%| /boot/efi|
+    ├─nvme0n1p6 |swap  | 1     |         |    db8b7f1c-c0b5-4ad1-ba33-15d5cc24e1f8  |       |      | [SWAP]|
+    ├─nvme0n1p7 |btrfs|        |ArchRoot |    49824e86-add9-49af-b93a-1bc35c300382  |145.9G |   19%| /btrfs|
+    └─nvme0n1p8 |xfs |         |ArchHome|     64e3d34f-1812-48b7-af1b-5f7b8ebe2dd2  | 26.4G|    32%| /home|
 
 
 ### Configuration
