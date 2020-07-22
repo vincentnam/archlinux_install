@@ -13,7 +13,7 @@ The installation is :
   
 The goals was to :
   - Have snapshots for system management
-  - Graphic Card installation for machine learning training on graphic card (Tensorflow)
+  - Install Graphic Card drivers and tools for machine learning training on graphic card (Tensorflow)
 
 Boot loader need to be on a FAT32 partition.
 Configuration of BTRFS is done to not snap pkg cache and home (~).
