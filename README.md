@@ -8,7 +8,7 @@ The installation is :
   - SDDM / KDE graphic environnement
   - BTRFS used for snapshots
   - Nvidia GeForce GTX 1070 Mobile installed (graphic driver)
-  - Double drive : HardDrive 1TO + 256 Go SSD  
+  - Double drive : Hard Disk Drive 1TO + 256 Go SSD  
   
   
 The goals was to :
@@ -56,7 +56,7 @@ lsblk -f return :
 
 
 ### Configuration
-
+This line : 
 
   pacstrap /mnt base base-devel archlinux-keyring btrfs-progs xfsprogs dosfstools grub efibootmgr
 
