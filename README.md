@@ -56,7 +56,6 @@ lsblk -f return :
 
 
 ### Configuration
-This line : 
 
     pacstrap /mnt base base-devel archlinux-keyring btrfs-progs xfsprogs dosfstools grub efibootmgr
 
