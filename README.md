@@ -72,6 +72,8 @@ https://www.youtube.com/watch?v=TKdZiCTh3EM
 The best solution is to use Docker (see docker installation on Arch Linux wikipedia for GPU usage for containers). Indeed, packages on Arch Linux, packages are often updated. You'll have quickly a difference between the Nvidia drivers and Tensorflow compilation driver version. 
 You can download a Tensorflow-GPU driver and install driver for Docker to use GPU. It won't break at the first update and you'll be able to manage your versions easily.
 
+### TODO :
+  - Encrypt disk and set up a passwd
 
 ### Credits - Generic
 
