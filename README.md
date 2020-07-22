@@ -1,4 +1,6 @@
 # archlinux_install
+##### Warning : This is not an installer, just a script that I used for my system : you might have to adapt it to your system and willing to make it usable !
+
 ### Information
 Repo for install script of dual boot Windows 10 / Arch Linux.
 The installation is : 
