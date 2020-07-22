@@ -58,7 +58,7 @@ lsblk -f return :
 ### Configuration
 This line : 
 
-  pacstrap /mnt base base-devel archlinux-keyring btrfs-progs xfsprogs dosfstools grub efibootmgr
+    pacstrap /mnt base base-devel archlinux-keyring btrfs-progs xfsprogs dosfstools grub efibootmgr
 
 This line is base package installation. Change package here if you want to install different file system. 
 
