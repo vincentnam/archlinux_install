@@ -66,6 +66,15 @@ Post script installation for BTRFS snapshot configuration (OpenSUSE way):
 https://www.youtube.com/watch?v=TKdZiCTh3EM
 
 
+
+### Machine Learning 
+
+The best solution is to use Docker (see docker installation on Arch Linux wikipedia for GPU usage for containers). Indeed, packages on Arch Linux, packages are often updated. You'll have quickly a difference between the Nvidia drivers and Tensorflow compilation driver version. 
+You can download a Tensorflow-GPU driver and install driver for Docker to use GPU. It won't break at the first update and you'll be able to manage your versions easily.
+
+
+### Credits - Generic
+
 This script is maybe not in his final version and you may need to configure this script to fit to your configuration. 
 If you want don't have graphic card, remove Nvidia Package 
 
