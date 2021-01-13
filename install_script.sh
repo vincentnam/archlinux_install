@@ -15,7 +15,8 @@ mkfs.xfs -f -L "ArchHome" ${HOME_PART}
 mkfs.btrfs -f -L "ArchRoot" ${ROOT_PART}
 mkfs.fat -F 32 -n "ArchBoot" ${BOOT_PART}
 mkswap -L "SWAP" ${SWAP_PART}
-
+# If first install and no data in DATA_PART then :
+#mkfs.xfs /dev/sda2
 
 
 ## Btrfs volume creation ## 
