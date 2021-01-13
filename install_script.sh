@@ -10,15 +10,15 @@ umount /data
 set +x
 
 
-
+## Partition formating ##
 mkfs.xfs -f -L "ArchHome" ${HOME_PART}
 mkfs.btrfs -f -L "ArchRoot" ${ROOT_PART}
 mkfs.fat -F 32 -n "ArchBoot" ${BOOT_PART}
-mkswap -L "SWAP"
+mkswap -L "SWAP" ${SWAP_PART}
 
 
 
-
+## Btrfs volume creation ## 
 
 mount -o rw,suid,dev,exec,auto,nouser,async,relatime,discard,ssd,nodev /dev/nvme0n1p7 /mnt/
 btrfs subvolume create /mnt/@
