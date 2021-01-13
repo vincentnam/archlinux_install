@@ -20,7 +20,7 @@ mkswap -L "SWAP" ${SWAP_PART}
 
 ## Btrfs volume creation ## 
 
-mount -o rw,suid,dev,exec,auto,nouser,async,relatime,discard,ssd,nodev /dev/nvme0n1p7 /mnt/
+mount -o rw,suid,dev,exec,auto,nouser,async,relatime,discard,ssd,nodev ${ROOT_PART} /mnt/
 btrfs subvolume create /mnt/@
 
 btrfs subvolume create /mnt/@pkg
